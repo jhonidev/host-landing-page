@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import ThemeContextProvider from "./contexts/ThemeContext";
+import Landing from "./pages/Landing";
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  * {
+    margin:0;
+    padding:0;
+  }
+  body {
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeContextProvider>
+      <GlobalStyle />
+      <Landing />
+    </ThemeContextProvider>
   );
 }
 
