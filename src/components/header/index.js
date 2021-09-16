@@ -1,5 +1,4 @@
 import Navbar from "../navbar";
-import bg from '../../bgwhite.png';
 import styled from "styled-components";
 import Text from '../Text';
 import Button from '../Button';

@@ -35,8 +35,10 @@ const handleClick = (actionType, action) => {
     switch(actionType) {
         case "click":
             action = !action;
+            break;
         case "redirect":
             window.location.href = `${action}`;
+            break;
         default:
     }
 }

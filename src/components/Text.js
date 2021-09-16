@@ -15,6 +15,7 @@ const TextStyle = styled.div`
         @media only screen and (max-width: 600px) {
             & {
                 font-size: ${props.mobileFontSize};
+                text-align: ${props.mobileAlign};
             }
         }
 
@@ -33,6 +34,7 @@ function Text(props) {
         maxWidth = 'none',
         mobileOptions = 'false',
         mobileFontSize = '16px',
+        mobileAlign = 'center',
         padding = '0px 18px'
     } = props;
 
@@ -46,6 +48,7 @@ function Text(props) {
             maxWidth={maxWidth}
             mobileOptions={mobileOptions}
             mobileFontSize={mobileFontSize}
+            mobileAlign={mobileAlign}
             padding={padding}
         >
             {props.children}
