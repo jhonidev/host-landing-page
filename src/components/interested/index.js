@@ -52,6 +52,18 @@ const InterestedStyle = styled.div`
         }
     }
 
+    @media only screen and (max-width: 500px) {
+
+    .btn-row {
+        flex-direction:column;
+        align-items:center;
+    }
+    .btn-row > * {
+        margin-bottom:10px;
+    }
+
+    }
+
 `;
 
 function Interested() {

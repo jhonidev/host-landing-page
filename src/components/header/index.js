@@ -37,6 +37,18 @@ const HeaderStyle = styled.div`
         margin-left:10px;
         margin-right:10px;
     }
+
+    @media only screen and (max-width: 500px) {
+
+        .header-btns {
+            flex-direction:column;
+            align-items:center;
+        }
+        .header-btns > * {
+            margin-bottom:10px;
+        }
+
+    }
 `;
 
 function Header() {
