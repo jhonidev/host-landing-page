@@ -46,13 +46,7 @@ const UptimeStyle = styled.div`
 
     @media only screen and (max-width: 800px) {
         .svg img {
-            width:350px;
-        }
-    }
-
-    @media only screen and (max-width: 500px) {
-        .svg img {
-            width:250px;
+            width:75%;
         }
     }
 
@@ -60,10 +54,6 @@ const UptimeStyle = styled.div`
     @media only screen and (max-width: 900px) {
         flex-direction: column;
         text-align:center;
-        .svg img {
-            width:400px;
-            left:0px;
-        }
         h2 {
             margin-top:15px;
         }
