@@ -44,6 +44,19 @@ const UptimeStyle = styled.div`
         }
     }
 
+    @media only screen and (max-width: 800px) {
+        .svg img {
+            width:350px;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .svg img {
+            width:250px;
+        }
+    }
+
+
     @media only screen and (max-width: 900px) {
         flex-direction: column;
         text-align:center;
